@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifky Portfolio | Fullstack Developer</title>
+    <meta name="description" content="Portfolio Rizky - Fullstack Developer | React, Node.js, UI/UX Design">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <span class="loader-text">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Navigation - Logo Baru -->
+<a href="#home" class="logo">
+    <div class="logo-icon">
+        <i class="fas fa-code"></i>
+    </div>
+    <span class="logo-text">RIFKY</span>
+</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Navbar Mobile Ready -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo" style="font-size: 1.5rem; font-weight: 800; color: #1e293b; text-decoration: none;">
+            RIZKY
+        </a>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-role">Fullstack Developer</span>
+                <!-- Hero Title - FIXED -->
+                <h1 class="hero-title"> Hi, I'm <span class="hero-name">Rifky</span>
+                </h1>
+                <p class="hero-desc">
+                    I am a first-year vocational high school student majoring in Software Engineering (RPL)
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-message"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2026-03-31 at 21.06.34.jpeg" alt="Rifky" class="profile-img">
+                    <div class="image-ring"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">Get to know me better</p>
+</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Young Developer in Training</h3>
+                    <p>
+                        As an RPL student, saya berusaha untuk terus meningkatkan kemampuan saya dengan belajar secara mandiri maupun melalui praktik di sekolah. Saya juga memiliki rasa ingin tahu yang tinggi terhadap perkembangan teknologi terbaru, sehingga saya sering mencari informasi dan mencoba hal-hal baru di bidang IT.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="50">8</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="9">10</span>
+                            <span class="stat-label">Month Exp</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="WhatsApp Image 2026-03-31 at 21.09.10.jpeg" alt="About" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- SKILLS - WORKING 100% -->
+<section id="skills" style="padding: 100px 0; background: #f8fafc;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <!-- Title -->
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 3rem; font-weight: 800; color: #1e293b; margin-bottom: 10px;">Skills</h2>
+            <p style="font-size: 1.2rem; color: #64748b;">Mastered Technologies</p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            
+            <!-- HTML -->
+            <div style="background: white; padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.08); border: 1px solid #f0f0f0;">
+                <div style="font-size: 3rem; color: #e34f26; margin-bottom: 20px;">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3 style="font-size: 1.4rem; color: #1a202c; margin-bottom: 20px;">HTML</h3>
+                <div style="background: #e2e8f0; height: 12px; border-radius: 6px; overflow: visible; margin-bottom: 10px;">
+                    <div class="html-bar" style="height: 100%; background: linear-gradient(90deg, #e34f26, #f06529); border-radius: 6px; width: 0%; transition: width 3s ease; box-shadow: 0 0 15px rgba(227,79,38,0.5);"></div>
+                </div>
+                <span style="color: #4a5568; font-weight: 600;">98%</span>
+            </div>
+
+            <!-- CSS -->
+            <div style="background: white; padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.08); border: 1px solid #f0f0f0;">
+                <div style="font-size: 3rem; color: #264de4; margin-bottom: 20px;">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3 style="font-size: 1.4rem; color: #1a202c; margin-bottom: 20px;">CSS</h3>
+                <div style="background: #e2e8f0; height: 12px; border-radius: 6px; overflow: visible; margin-bottom: 10px;">
+                    <div class="css-bar" style="height: 100%; background: linear-gradient(90deg, #264de4, #2965f1); border-radius: 6px; width: 0%; transition: width 3s ease; box-shadow: 0 0 15px rgba(38,77,228,0.5);"></div>
+                </div>
+                <span style="color: #4a5568; font-weight: 600;">95%</span>
+            </div>
+
+            <!-- JavaScript -->
+            <div style="background: white; padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.08); border: 1px solid #f0f0f0;">
+                <div style="font-size: 3rem; color: #f7df1e; margin-bottom: 20px;">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <h3 style="font-size: 1.4rem; color: #1a202c; margin-bottom: 20px;">JavaScript</h3>
+                <div style="background: #e2e8f0; height: 12px; border-radius: 6px; overflow: visible; margin-bottom: 10px;">
+                    <div class="js-bar" style="height: 100%; background: linear-gradient(90deg, #f7df1e, #fadc00); border-radius: 6px; width: 0%; transition: width 3s ease; box-shadow: 0 0 20px rgba(247,223,30,0.7);"></div>
+                </div>
+                <span style="color: #4a5568; font-weight: 600;">92%</span>
+            </div>
+
+            <!-- Database -->
+            <div style="background: white; padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.08); border: 1px solid #f0f0f0;">
+                <div style="font-size: 3rem; color: #3b82f6; margin-bottom: 20px;">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 style="font-size: 1.4rem; color: #1a202c; margin-bottom: 20px;">Database</h3>
+                <div style="background: #e2e8f0; height: 12px; border-radius: 6px; overflow: visible; margin-bottom: 10px;">
+                    <div class="db-bar" style="height: 100%; background: linear-gradient(90deg, #3b82f6, #60a5fa); border-radius: 6px; width: 0%; transition: width 3s ease; box-shadow: 0 0 15px rgba(59,130,246,0.5);"></div>
+                </div>
+                <span style="color: #4a5568; font-weight: 600;">88%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// SKILLS ANIMATION - BULLETPROOF
+document.addEventListener('DOMContentLoaded', function() {
+    function animateBars() {
+        // HTML
+        setTimeout(() => document.querySelector('.html-bar').style.width = '98%', 300);
+        // CSS  
+        setTimeout(() => document.querySelector('.css-bar').style.width = '95%', 600);
+        // JS
+        setTimeout(() => document.querySelector('.js-bar').style.width = '92%', 900);
+        // DB
+        setTimeout(() => document.querySelector('.db-bar').style.width = '88%', 1200);
+    }
+    
+    // Trigger 3x untuk jaga-jaga
+    animateBars();
+    setTimeout(animateBars, 2000);
+    window.addEventListener('scroll', function() {
+        if (document.querySelector('#skills').getBoundingClientRect().top < window.innerHeight) {
+            animateBars();
+        }
+    });
+});
+</script>
+
+<style>
+/* Skills Hover */
+div[style*="box-shadow"] {
+    transition: all 0.4s ease !important;
+}
+div[style*="box-shadow"]:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15) !important;
+}
+</style>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+    <h2 class="section-title">Portfolio</h2>
+    <p class="section-subtitle">Latest Projects</p>
+</div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ecommerce">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern e-commerce solution with React & Node.js</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Task Manager">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Task Manager App</h3>
+                        <p>Productivity app with real-time collaboration</p>
+                        <div class="portfolio-tags">
+                            <span>Next.js</span>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1559028001-6b6f326a17a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dashboard">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Admin Dashboard</h3>
+                        <p>Analytics dashboard with interactive charts</p>
+                        <div class="portfolio-tags">
+                            <span>Vue.js</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Landing">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Landing Page</h3>
+                        <p>High-converting landing page design</p>
+                        <div class="portfolio-tags">
+                            <span>Tailwind</span>
+                            <span>Framer Motion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - PERFECT -->
+<section id="services" style="padding: 120px 0; background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        
+        <!-- Title -->
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 3rem; font-weight: 800; color: #1e293b; margin-bottom: 15px;">Services</h2>
+            <p style="font-size: 1.2rem; color: #64748b; max-width: 600px; margin: 0 auto; line-height: 1.7;">Professional services, i offer to you</p>
+        </div>
+
+        <!-- Services Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+            
+            <!-- Web Development -->
+            <div style="background: white; padding: 40px 30px; border-radius: 24px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.08); border: 1px solid #f0f9ff; transition: all 0.4s ease; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #6366f1, #8b5cf6);"></div>
+                <div style="font-size: 3.5rem; color: #6366f1; margin-bottom: 25px;">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; color: #1e293b; margin-bottom: 15px; font-weight: 700;">Web Development</h3>
+                <p style="color: #64748b; line-height: 1.7; margin-bottom: 25px;">Custom websites and web applications with modern technologies</p>
+                <ul style="text-align: left; color: #4a5568; font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>Responsive Design</li>
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>Fast Performance</li>
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>SEO Optimized</li>
+                </ul>
+            </div>
+
+            <!-- Mobile Apps -->
+            <div style="background: white; padding: 40px 30px; border-radius: 24px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.08); border: 1px solid #f0f9ff; transition: all 0.4s ease; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                <div style="font-size: 3.5rem; color: #10b981; margin-bottom: 25px;">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; color: #1e293b; margin-bottom: 15px; font-weight: 700;">Mobile Apps</h3>
+                <p style="color: #64748b; line-height: 1.7; margin-bottom: 25px;">Native and cross-platform mobile applications</p>
+                <ul style="text-align: left; color: #4a5568; font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>React Native</li>
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>Flutter</li>
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>App Store Ready</li>
+                </ul>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div style="background: white; padding: 40px 30px; border-radius: 24px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.08); border: 1px solid #f0f9ff; transition: all 0.4s ease; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                <div style="font-size: 3.5rem; color: #f59e0b; margin-bottom: 25px;">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; color: #1e293b; margin-bottom: 15px; font-weight: 700;">UI/UX Design</h3>
+                <p style="color: #64748b; line-height: 1.7; margin-bottom: 25px;">Beautiful and intuitive user experiences</p>
+                <ul style="text-align: left; color: #4a5568; font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #f59e0b; margin-right: 10px;"></i>Figma Design</li>
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #f59e0b; margin-right: 10px;"></i>Prototyping</li>
+                    <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #f59e0b; margin-right: 10px;"></i>User Testing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Services Hover */
+div[style*="box-shadow: 0 20px"]:hover {
+    transform: translateY(-15px) !important;
+    box-shadow: 0 35px 70px rgba(0,0,0,0.15) !important;
+}
+</style>
+
+    <!-- Contact Section - COMPLETE -->
+<section id="contact" class="contact" style="background: #f8fafc; padding: 120px 0;">
+    <div class="container">
+        <div class="section-header" style="text-align: center; margin-bottom: 5rem;">
+            <h2 class="section-title" style="font-size: 3.5rem; color: #1e293b; font-weight: 800;">Contact Me</h2>
+            <p class="section-subtitle" style="font-size: 1.2rem; color: #64748b; max-width: 600px; margin: 0 auto;">
+            Contact gweh
+            </p>
+        </div>
+        
+        <div class="contact-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto;">
+            
+            <!-- Contact Info -->
+            <div class="contact-info" style="display: flex; flex-direction: column; gap: 2rem;">
+                <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; padding: 1.5rem; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #6366f1, #8b5cf6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #1e293b;">Email</h4>
+                        <a href="mailto:hello@rizky.dev" style="color: #6366f1; text-decoration: none; font-weight: 500;">Noneng1945@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; padding: 1.5rem; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #10b981, #34d399); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #1e293b;">Phone</h4>
+                        <a href="https://wa.me/6285830821008?text=Hi%20Admin%2C%0ASaya%20ingin%20pesan%20website%20portfolio" style="color: #10b981; text-decoration: none; font-weight: 500;">+62 858 3082 1008</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; padding: 1.5rem; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f59e0b, #fbbf24); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #1e293b;">Location</h4>
+                        <p style="color: #64748b; margin: 0;">Banda Aceh, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" id="contactForm" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                <div class="form-row" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                    <input type="text" placeholder="Your Name" required style="flex: 1; padding: 1rem 1.25rem; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 1rem; font-family: inherit; transition: all 0.3s ease;">
+                    <input type="email" placeholder="Your Email" required style="flex: 1; padding: 1rem 1.25rem; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 1rem; font-family: inherit; transition: all 0.3s ease;">
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <input type="text" placeholder="Subject" required style="width: 100%; padding: 1rem 1.25rem; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 1rem; font-family: inherit; transition: all 0.3s ease;">
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <textarea placeholder="Tell me about your project..." rows="5" required style="width: 100%; padding: 1rem 1.25rem; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 1rem; font-family: inherit; resize: vertical; transition: all 0.3s ease;"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn" style="
+                    width: 100%; 
+                    padding: 1.25rem; 
+                    background: linear-gradient(135deg, #6366f1, #8b5cf6); 
+                    color: white; 
+                    border: none; 
+                    border-radius: 12px; 
+                    font-size: 1.1rem; 
+                    font-weight: 600; 
+                    cursor: pointer; 
+                    display: flex; 
+                    align-items: center; 
+                    justify-content: center; 
+                    gap: 0.75rem; 
+                    transition: all 0.3s ease; 
+                    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+                ">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/ikyyy_fs?igsh=ZzFzbW8yMXNlNnVz"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.link/ub6l1n"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+                <p>&copy; 2026 Rifky. Made with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
